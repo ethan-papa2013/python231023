@@ -16,4 +16,3 @@ def swap(x,y):
 result = swap(5,6)
 print(result)
 
-
