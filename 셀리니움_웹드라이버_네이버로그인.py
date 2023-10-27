@@ -17,12 +17,12 @@ driver.get('https://nid.naver.com/nidlogin.login')
 # time.sleep(1)   # 1초 시간 지연
 
 # 로그인 창에 아이디/비밀번호 입력
-loginID = "pytestthon"
+loginID = ""
 clipboard.copy(loginID)
 #mac은 COMMAND, window는 CONTROL
 driver.find_element(By.XPATH,'//*[@id="id"]').send_keys(Keys.CONTROL, 'v')
 
-loginPW = "uddl81!@18"
+loginPW = ""
 clipboard.copy(loginPW)
 driver.find_element(By.XPATH,'//*[@id="pw"]').send_keys(Keys.CONTROL, 'v')
 time.sleep(1)
